@@ -1,0 +1,7 @@
+pip install pygame  #背景音乐库
+pip install Pillow>=10.0.0
+pip install pyinstaller  #如需要生成.EXE文件，安装此库
+生成EXE命令，成语填字文件夹下，CMD
+python -m PyInstaller --onefile --add-data OIG.jpg;. --add-data 成语库.txt;. --add-data "Legends Never Die.mp3;." --add-data "孤勇者.mp3;." --add-data "天空之城.mp3;." 成语填字.py
+
+self.music_files = ['Legends Never Die.mp3', '孤勇者.mp3', '天空之城.mp3'] # 音乐文件列表,不喜欢，下载好音乐.MP3，改名字保存
